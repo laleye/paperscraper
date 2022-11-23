@@ -15,7 +15,7 @@ class XRXivQuery:
     def __init__(
         self,
         dump_filepath: str,
-        fields: List[str] = ["title", "doi", "authors", "abstract", "date", "journal"],
+        fields: List[str] = ["title", "doi", "authors", "abstract", "date", "journal", "category"],
     ):
         """
         Initialize the query class.

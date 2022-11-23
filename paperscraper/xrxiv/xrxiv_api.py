@@ -1,5 +1,5 @@
 """API for bioRxiv and medRXiv."""
-import requests
+import requests, sys
 from datetime import datetime
 from typing import Optional, List, Generator
 
@@ -37,7 +37,7 @@ class XRXivApi:
         self,
         begin_date: Optional[str] = None,
         end_date: Optional[str] = None,
-        fields: List[str] = ["title", "doi", "authors", "abstract", "date", "journal"],
+        fields: List[str] = ["title", "doi", "authors", "abstract", "date", "journal", "category"],
     ) -> Generator:
         """
         Get paper metadata.
